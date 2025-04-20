@@ -25,9 +25,9 @@ export const Nav = () => {
             height="155"
             src="https://kits.roxthemes.com/byterox/wp-content/uploads/2024/11/logo-DU-min.png.pagespeed.ce.Ek3z2Kc6K2.png"
             alt="logo"
-            sizes="(max-width: 690px) 100vw, 690px"
+            className="w-[200px]"
           />
-          <ul className="md:flex hidden gap-6 uppercase">
+          <ul className="lg:flex hidden gap-6 uppercase">
             {navItems.map((items) => {
               const isActive = pathname === items.href;
               return (
@@ -42,8 +42,10 @@ export const Nav = () => {
               );
             })}
           </ul>
-          <GradientButton>Get Started </GradientButton>
-          <div className="md:hidden block">
+          <GradientButton className="md:block hidden">
+            Get Started{" "}
+          </GradientButton>
+          <div className="lg:hidden block">
             <Menu />
           </div>
         </div>

@@ -40,7 +40,7 @@ export const HomeComponent = () => {
             quis
           </p>
           <div className="flex gap-4 text-lg mt-10">
-            <GradientButton className="flex gap-2 font-bold">
+            <GradientButton className="flex gap-2 font-bold items-center">
               Get Started <ArrowRight />
             </GradientButton>
             <button className="py-2 px-8 uppercase text-white rounded-xl bg-black/30 font-bold hover:bg-gradient-to-r from-[#cb45ff] to-[#38a2e7]">
@@ -81,7 +81,7 @@ export const HomeComponent = () => {
           odio.
         </motion.p>
 
-        <div className="flex gap-10 mt-10">
+        <div className="flex lg:flex-row flex-col gap-10 mt-10">
           <div className="rounded-lg custom-gradient hover:text-3xl border-[#1f0e2e]/30 border font-bold p-10 text-white text-3xl">
             Cyber Threat Intelligence
           </div>

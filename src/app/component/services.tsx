@@ -8,7 +8,7 @@ export const Services = () => {
   return (
     <div className="py-16 px-4 text-lg  bg-[#170a24]">
       <div
-        className="flex gap-3 md:flex-row flex-col items-center"
+        className="flex gap-3 lg:flex-row flex-col items-center"
         id="services"
       >
         <div className="md:w-[30%] w-full">
@@ -47,7 +47,7 @@ export const Services = () => {
         </GradientButton>
       </div>
 
-      <div className="flex gap-10 pt-16">
+      <div className="flex ld:flex-row flex-col gap-10 pt-16">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
