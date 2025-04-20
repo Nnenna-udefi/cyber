@@ -7,7 +7,7 @@ import { LogoScroller } from "./logoScroller";
 export const HomeComponent = () => {
   return (
     <div className="text-lg">
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden">
         {/* /* Background Video */}
         <div className="absolute top-0 left-0 w-full bg-[#121423] h-full z-0">
           <iframe
@@ -58,14 +58,14 @@ export const HomeComponent = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-white text-center py-10 bg-[#2c133b] flex items-center justify-center flex-col"
+        className="text-white text-center py-16 bg-[#2c133b] flex items-center justify-center flex-col"
       >
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-3xl md:text-4xl "
+          className="text-3xl md:text-4xl font-bold"
         >
           Manage Security services
         </motion.h2>
@@ -74,7 +74,7 @@ export const HomeComponent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.35 }}
-          className="p-4 w-[70%]"
+          className="p-4 w-[70%] text-lg"
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ipsam
           rem animi reprehenderit ipsum nemo veniam ratione, harum in enim vitae
@@ -82,13 +82,13 @@ export const HomeComponent = () => {
         </motion.p>
 
         <div className="flex gap-10 mt-10">
-          <div className="rounded-lg bg-[#2b1836] hover:text-3xl border-[#1f0e2e]/30 border font-bold p-10 text-white text-2xl">
+          <div className="rounded-lg custom-gradient hover:text-3xl border-[#1f0e2e]/30 border font-bold p-10 text-white text-3xl">
             Cyber Threat Intelligence
           </div>
-          <div className="rounded-lg bg-[#2b1836] hover:text-3xl border-[#1f0e2e]/70 border font-bold p-10 text-white text-2xl">
+          <div className="rounded-lg custom-gradient hover:text-3xl border-[#1f0e2e]/70 border font-bold p-10 text-white text-3xl">
             Malware Removal
           </div>
-          <div className="rounded-lg bg-[#2b1836] hover:text-3xl border-[#1f0e2e] border font-bold p-10 text-white text-2xl">
+          <div className="rounded-lg custom-gradient hover:text-3xl border-[#1f0e2e] border font-bold p-10 text-white text-3xl">
             24/7 Online Support
           </div>
         </div>

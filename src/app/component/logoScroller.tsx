@@ -8,7 +8,7 @@ export const LogoScroller = () => {
   const logos = Array(6).fill(0); // Replace with actual data if needed
 
   return (
-    <div className="bg-[#121423]  text-white py-10 text-center">
+    <div className="bg-[#121423]  text-white py-16 text-center">
       <motion.p
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export const LogoScroller = () => {
           {[...logos, ...logos].map((_, idx) => (
             <div className="flex items-center gap-3 logo-item" key={idx}>
               <Image src={CompanyLogo} alt="logo" className="w-8 h-8" />
-              <p className="animate-bounceY text-xl">LogoIpsum</p>
+              <p className="animate-bounceY text-2xl">LogoIpsum</p>
             </div>
           ))}
         </div>

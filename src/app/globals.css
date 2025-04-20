@@ -23,7 +23,7 @@
 body {
   background: linear-gradient(to right, #2c1946 0%, #121423 100%);
   color: #ffffff;
-  font-weight: 800;
+
   font-family: var(--font-lato);
 }
 .bgColor {
